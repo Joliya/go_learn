@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 import "go_learn/leetcode/base_sort"
+import "go_learn/go_knowledge"
 
 func CopySlice(slice []int) []int {
 	newSlice := make([]int, len(slice))
@@ -21,4 +22,7 @@ func main() {
 	fmt.Println(base_sort.SimpleSelectSort(CopySlice(nums)))
 	// 二分排序算法
 	fmt.Println(base_sort.TwoSplitSort(CopySlice(nums)))
+
+	// go_struct
+	go_knowledge.GoStructInit()
 }
