@@ -1,8 +1,11 @@
 package main
 
-import "fmt"
-import "go_learn/leetcode/base_sort"
-import "go_learn/go_knowledge"
+import (
+	"fmt"
+	"go_learn/go_knowledge"
+	"go_learn/leetcode/array"
+	"go_learn/leetcode/base_sort"
+)
 
 func CopySlice(slice []int) []int {
 	newSlice := make([]int, len(slice))
@@ -25,4 +28,9 @@ func main() {
 
 	// go_struct
 	go_knowledge.GoStructInit()
+
+	// 合并两个有序数组
+	a := []int{2, 3, 66, 88, 102}
+	b := []int{4, 55, 65, 99}
+	fmt.Println(array.MergeOrderArray(a, b))
 }
