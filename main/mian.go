@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"go_learn/go_knowledge"
+	"go_learn/leetcode"
 	"go_learn/leetcode/array"
 	"go_learn/leetcode/base_sort"
 )
@@ -33,4 +34,9 @@ func main() {
 	a := []int{2, 3, 66, 88, 102}
 	b := []int{4, 55, 65, 99}
 	fmt.Println(array.MergeOrderArray(a, b))
+
+	// 三数之和
+	nums = []int{-1, 0, 1, 2, -1, -4}
+	fmt.Println(leetcode.ThreeNumSum(nums))
+	fmt.Println(leetcode.ThreeNumSum([]int{0, 0, 0, 0}))
 }
