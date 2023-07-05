@@ -1,5 +1,10 @@
 package leetcode
 
+/*
+三数之和， 三数之和相加等于 0
+
+*/
+
 import (
 	"sort"
 )
