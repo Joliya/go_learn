@@ -6,6 +6,7 @@ import (
 	"go_learn/leetcode"
 	"go_learn/leetcode/array"
 	"go_learn/leetcode/base_sort"
+	"go_learn/leetcode/list"
 )
 
 func CopySlice(slice []int) []int {
@@ -39,4 +40,23 @@ func main() {
 	nums = []int{-1, 0, 1, 2, -1, -4}
 	fmt.Println(leetcode.ThreeNumSum(nums))
 	fmt.Println(leetcode.ThreeNumSum([]int{0, 0, 0, 0}))
+
+	// 验证反转列表
+	head := &list.Node{Data: 1}
+	node2 := &list.Node{Data: 2}
+	node3 := &list.Node{Data: 3}
+	node4 := &list.Node{Data: 4}
+	node5 := &list.Node{Data: 5}
+
+	head.Next = node2
+	node2.Next = node3
+	node3.Next = node4
+	node4.Next = node5
+
+	fmt.Println("原始链表:")
+	list.DisplayLinkedList(head)
+
+	fmt.Println("反转后的链表:")
+	newHead := list.ReverseList(head)
+	list.DisplayLinkedList(newHead)
 }
